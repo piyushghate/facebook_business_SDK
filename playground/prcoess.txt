@@ -1,0 +1,3 @@
+Cannot stress this enough!!! - access token should be generated properly with the requred access.
+Campaign created using facebook_business sdk for python!
+campaigns accessed using python

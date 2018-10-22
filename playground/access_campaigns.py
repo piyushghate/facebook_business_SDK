@@ -1,0 +1,10 @@
+from facebook_business.api import FacebookAdsApi
+from facebook_business.adobjects.adaccount import AdAccount
+
+my_app_id = '2215442238727389'
+my_app_secret = '3b86f20ea08f7fd2a3cc6b2925d1b07b'
+my_access_token = 'EAAfe7teo5N0BACQ0UZAf43ZCG0uVPvaJaNd4YpHDZCWFjv6lv4ZAH1hPidbbwuxTFLzGRCbAAOGXc50jIosvKr4D1wWNAcR6nC8WZBwbAZAqQtJGKd3xLuOMlknmlEDyr63ls8R1gFyhMyBtlbFVa34bKmGfIhfKbtfXBEkYZAg2fA0jjp5xFugNudzuMr8byLTnCpoGArK2zkZBG59zgzkZC3NcwQkgFU8MDJw5J3oTsEwZDZD'
+FacebookAdsApi.init(my_app_id, my_app_secret, my_access_token)
+my_account = AdAccount('act_257672218227370')
+campaigns = my_account.get_campaigns()
+print(campaigns)

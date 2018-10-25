@@ -4,8 +4,8 @@ from facebook_business.api import FacebookAdsApi
 
 access_token = ''
 app_secret = ''
-app_id = '2215442238727389'
-id = 'act_257672218227370'
+app_id = ''
+id = 'act_'
 FacebookAdsApi.init(access_token=access_token)
 
 fields = [

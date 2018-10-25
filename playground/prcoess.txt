@@ -1,3 +1,8 @@
 Cannot stress this enough!!! - access token should be generated properly with the required access.
 Campaign created using facebook_business sdk for python!
 campaigns accessed using python
+tried to use the facebook python sdk for Adset suggested by the developer.facebook, but kept getting errors for parent deprecation in constructor.
+Tried to use the Campaign creation in test.py with few changes for Adset -- It worked!!
+Access file updated to read Campaigns and Adset
+Working on Ad/Ad Create  --- almost created..
+playing around with AdCreativeTextData, AdCreativeVideoData and AdCreativeLinkData using AdCreativeObjectStorySpec

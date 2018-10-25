@@ -26,17 +26,18 @@ from facebook_business.api import FacebookAdsApi
 #         }
 
 access_token = ''
-id = 'act_<AccID>'
+id = 'act_'
 
 FacebookAdsApi.init(access_token=access_token)
 
 fields = []
 params = {
   'name': 'First Ad Set',
-  'campaign_id': '23843112406190495',
-  'campaign': 'My campaign',
+  'campaign_id': '120330000098904819',
+  # 'campaign': 'My campaign',
   'billing_event': 'LINK_CLICKS',
   'optimization_goal': 'LINK_CLICKS',
+  'promoted_object': '{"page_id": "706105013086461"}',
   'daily_budget': '20000',
   'bid_amount': '2',
   'targeting' : {'geo_locations':{'countries':['IN']}},

@@ -6,3 +6,7 @@ Tried to use the Campaign creation in test.py with few changes for Adset -- It w
 Access file updated to read Campaigns and Adset
 Working on Ad/Ad Create  --- almost created..
 playing around with AdCreativeTextData, AdCreativeVideoData and AdCreativeLinkData using AdCreativeObjectStorySpec
+got the quick link for the entire code base from facebook.....:(
+working with facebook login..
+got the script ready in Javascripts...
+send to review to get the access for ads_management after the app is live mode....waiting for the review to complete...

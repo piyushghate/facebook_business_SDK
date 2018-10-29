@@ -22,3 +22,11 @@ def createAdset(campaign_id):
 
     return ad_set.get_id()
     # print ('ad_set_id:', ad_set_id, '\n')
+
+def readAdsets():
+    print(AdAccount(ad_account_id).get_ad_sets())
+
+def deleteAdset(adSetID):
+    adset = AdSet(adSetID)
+    adset.remote_delete()
+    print('Adset with ID: ', adSetID, 'deleted!')

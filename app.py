@@ -1,6 +1,9 @@
 from campaigns import createCamp
 from campaigns import readCampaigns
+from campaigns import deleteCampaigns
 from adsets import createAdset
+from adsets import readAdsets
+from adsets import deleteAdset
 
 x = 'yes'
 while(x == 'y' or x == 'yes'):
@@ -11,6 +14,9 @@ while(x == 'y' or x == 'yes'):
     print('3. Create Ad within a Adset')
     print('4. Read Campaign')
     print('5. Read Adset')
+    print('6. Read Ad')
+    print('7. Delete Campaign')
+    print('8. Delete Adset')
 
     userInput = input('Your Input: ')
 
@@ -34,5 +40,19 @@ while(x == 'y' or x == 'yes'):
 
     elif(userInput == '5'):
         print('Printing Adset')
+        readAdsets()
+    
+    elif(userInput == '6'):
+        print('Printing Ads')
+
+    elif(userInput == '7'):
+        print('Deleting Campaign')
+        campIDD = input('Please enter the campaign ID: ')
+        deleteCampaigns(campIDD)
+
+    elif(userInput == '8'):
+        print('Deleting Adset')
+        adSetID = input('Please enter the Adset ID: ')
+        deleteAdset(adSetID)
     
     x = input('Would you like to continue(y/n)?')

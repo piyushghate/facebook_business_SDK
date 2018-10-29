@@ -20,3 +20,8 @@ def createCamp():
 
 def readCampaigns():
     print((AdAccount(ad_account_id)).get_campaigns())
+
+def deleteCampaigns(campIDD):
+    campaign = Campaign(campIDD)
+    campaign.remote_delete()
+    print('Campaign with ID: ', campIDD, 'deleted!')

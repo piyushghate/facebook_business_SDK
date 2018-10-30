@@ -1,0 +1,17 @@
+from facebook_business.adobjects.adaccount import AdAccount
+from facebook_business.adobjects.campaign import Campaign
+from facebook_business.adobjects.adset import AdSet
+from facebook_business.adobjects.adcreative import AdCreative
+from facebook_business.adobjects.ad import Ad
+from facebook_business.adobjects.adpreview import AdPreview
+from facebook_business.adobjects.adimage import AdImage
+from facebook_business.api import FacebookAdsApi
+
+
+access_token = 'EAAfe7teo5N0BACQejKLUGkwZBv956lZBpSXdyWyN6lMyICHXXF04rKiiLk4jJ5I4ZCfLynrddusOO7bHl1zpDS1DfUC2CkRSPnpxbkSHRKxEZCm4E2F8sfVbXyUtAsPcIkLtTWQOSFaWgtzkHCDTt4z7ZAisPNvZBUn6HqkoP90SZChEtdepkkplfZAznewbqnm5163dxdEiCwZDZD'
+ad_account_id = 'act_2169630839952892'
+app_secret = '3b86f20ea08f7fd2a3cc6b2925d1b07b'
+page_id = '1961041583957344'
+app_id = '2215442238727389'
+
+FacebookAdsApi.init(access_token=access_token)

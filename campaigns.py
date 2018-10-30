@@ -1,5 +1,6 @@
 from facebook_imp import *
 
+print('In camps.py')
 
 def createCamp():
     fields = []
@@ -25,3 +26,19 @@ def deleteCampaigns(campIDD):
     campaign = Campaign(campIDD)
     campaign.remote_delete()
     print('Campaign with ID: ', campIDD, 'deleted!')
+
+def pauseCamp(campIDD):
+    camp = Campaign(fbid=campIDD, parent_id=ad_account_id)
+    camp.update({
+    Campaign.Field.status: Campaign.Status.paused,
+    })
+    camp.remote_update()
+    print('Campaign with ID: ', campIDD,'paused!')
+
+def startCamp(campIDD):
+    camp = Campaign(fbid=campIDD, parent_id=ad_account_id)
+    camp.update({
+    Campaign.Field.status: Campaign.Status.active,
+    })
+    camp.remote_update()
+    print('Campaign with ID: ', campIDD,'activated!')
